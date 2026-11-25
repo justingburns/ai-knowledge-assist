@@ -1,0 +1,36 @@
+{
+  "name": "Hometown Community Credit Union",
+  "shortName": "Hometown CU",
+  "phone": "(800) 555-0142",
+  "fraudPhone": "(800) 555-0199",
+  "website": "www.hometowncu.example",
+  "appName": "Hometown Mobile",
+  "onlineBankingName": "Online Banking",
+  "routingNumber": "123456789",
+  "hours": {
+    "contactCenter": "Monday–Friday 8 a.m.–7 p.m. and Saturday 9 a.m.–1 p.m. (local time)",
+    "branches": "Monday–Friday 9 a.m.–5 p.m. and Saturday 9 a.m.–12 p.m."
+  },
+  "policy": {
+    "mobileDepositDailyLimit": "$5,000",
+    "mobileDepositHoldNote": "The first $225 is usually available the next business day; the rest is typically available within two business days",
+    "atmNetwork": "CO-OP and Allpoint",
+    "surchargeFreeAtms": "30,000+",
+    "atmDailyLimit": "$500",
+    "debitPosDailyLimit": "$2,500",
+    "overdraftTransferFee": "$5",
+    "nsfFee": "$25",
+    "wireDomesticFee": "$20",
+    "wireCutoff": "2 p.m.",
+    "achPostingNote": "ACH deposits usually post on the scheduled payment date; some employers' deposits arrive up to two days early",
+    "membershipMinimum": "$5 deposit into a Membership Savings account",
+    "statementCycle": "monthly",
+    "disputeWindow": "60 days from the statement date",
+    "cardReplacementDays": "7–10 business days",
+    "rushCardFee": "$25"
+  },
+  "responseDefaults": {
+    "emailClosing": "Warm regards,",
+    "teamSignature": "Member Services Team"
+  }
+}

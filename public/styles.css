@@ -1,0 +1,134 @@
+:root {
+  --bg: #f4f6f8;
+  --surface: #ffffff;
+  --text: #1c2733;
+  --muted: #5b6b7b;
+  --border: #d9e0e7;
+  --brand: #0b5c8e;
+  --brand-contrast: #ffffff;
+  --brand-soft: #e5f0f8;
+  --warn-bg: #fff6e0;
+  --warn-border: #e8b84a;
+  --danger-bg: #fdecec;
+  --danger-border: #d9534f;
+  --ok: #217a4b;
+  --radius: 10px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f151b;
+    --surface: #18212a;
+    --text: #e6edf3;
+    --muted: #9aabbb;
+    --border: #2c3a47;
+    --brand: #5fb0e8;
+    --brand-contrast: #0b1620;
+    --brand-soft: #1b3346;
+    --warn-bg: #3a2f12;
+    --warn-border: #b38a2c;
+    --danger-bg: #3d1c1c;
+    --danger-border: #c0504d;
+    --ok: #5cc98d;
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.topbar {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 12px 20px; background: var(--surface); border-bottom: 1px solid var(--border);
+}
+.brand { display: flex; align-items: center; gap: 12px; }
+.brand svg { width: 34px; height: 34px; color: var(--brand); flex: none; }
+.brand h1 { margin: 0; font-size: 18px; }
+.brand p { margin: 0; color: var(--muted); font-size: 13px; }
+.pill {
+  font-size: 12px; padding: 4px 10px; border-radius: 999px;
+  background: var(--brand-soft); color: var(--brand); white-space: nowrap;
+}
+
+.layout {
+  display: grid; gap: 16px; padding: 16px;
+  grid-template-columns: minmax(280px, 1fr) minmax(320px, 1.3fr) minmax(260px, 1fr);
+  align-items: start; max-width: 1600px; margin: 0 auto;
+}
+@media (max-width: 1100px) { .layout { grid-template-columns: 1fr 1fr; } .layout > :last-child { grid-column: 1 / -1; } }
+@media (max-width: 720px) { .layout { grid-template-columns: 1fr; padding: 12px 16px; } .topbar { padding: 10px 16px; } }
+
+.panel {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 16px; min-width: 0;
+}
+.panel h2 { margin: 0 0 12px; font-size: 15px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+
+label { display: block; font-weight: 600; font-size: 13px; margin-bottom: 10px; }
+input:not([type=radio]), textarea {
+  display: block; width: 100%; margin-top: 4px; padding: 8px 10px;
+  font: inherit; font-weight: 400; color: var(--text); background: var(--bg);
+  border: 1px solid var(--border); border-radius: 8px;
+}
+textarea { resize: vertical; }
+input:focus, textarea:focus, button:focus-visible { outline: 2px solid var(--brand); outline-offset: 1px; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+.segmented { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 12px; }
+.segmented label { margin: 0; padding: 6px 16px; cursor: pointer; font-weight: 500; }
+.segmented input { position: absolute; opacity: 0; }
+.segmented label:has(input:checked) { background: var(--brand); color: var(--brand-contrast); }
+.segmented label:has(input:focus-visible) { outline: 2px solid var(--brand); outline-offset: -2px; }
+
+.actions { display: flex; align-items: center; gap: 10px; margin-top: 4px; }
+button {
+  font: inherit; font-weight: 600; padding: 8px 16px; border-radius: 8px; cursor: pointer;
+  border: 1px solid var(--border); background: var(--surface); color: var(--text);
+}
+button.primary { background: var(--brand); border-color: var(--brand); color: var(--brand-contrast); }
+button:disabled { opacity: .6; cursor: wait; }
+.hint { color: var(--muted); font-size: 12px; font-weight: 400; }
+.empty { color: var(--muted); }
+
+.alert { border-left: 4px solid; border-radius: 6px; padding: 8px 12px; margin-top: 12px; font-size: 13px; }
+.alert strong { display: block; }
+.alert ul { margin: 4px 0 0; padding-left: 18px; }
+.alert.warn { background: var(--warn-bg); border-color: var(--warn-border); }
+.alert.danger { background: var(--danger-bg); border-color: var(--danger-border); }
+.alert.info { background: var(--brand-soft); border-color: var(--brand); }
+
+.samples { margin-top: 16px; font-size: 13px; }
+.samples summary { cursor: pointer; color: var(--brand); }
+.samples ul { padding-left: 18px; margin: 8px 0 0; }
+.samples button { padding: 2px 0; border: 0; background: none; color: var(--text); font-weight: 400; text-align: left; text-decoration: underline; text-decoration-color: var(--border); }
+
+.option {
+  display: block; position: relative; border: 1px solid var(--border); border-radius: 8px;
+  padding: 10px 12px 10px 38px; margin-bottom: 10px; cursor: pointer; font-weight: 400;
+}
+.option input { position: absolute; left: 12px; top: 14px; accent-color: var(--brand); }
+.option:has(input:checked) { border-color: var(--brand); background: var(--brand-soft); }
+.option-head { display: flex; gap: 8px; align-items: baseline; margin-bottom: 4px; flex-wrap: wrap; }
+.option-head b { font-size: 14px; }
+.tag { font-size: 11px; padding: 1px 8px; border-radius: 999px; border: 1px solid var(--border); color: var(--muted); }
+.option pre {
+  margin: 0; white-space: pre-wrap; word-wrap: break-word; font: inherit; font-size: 13.5px;
+  max-height: 9.5em; overflow: hidden; mask-image: linear-gradient(#000 75%, transparent);
+}
+.option:has(input:checked) pre { max-height: none; mask-image: none; }
+#editor { margin-top: 12px; border-top: 1px solid var(--border); padding-top: 12px; }
+#copy-status.ok { color: var(--ok); }
+
+.article { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; margin-top: 10px; }
+.article.match { border-color: var(--brand); }
+.article h3 { font-size: 14px; margin: 0 0 4px; }
+.article p { margin: 4px 0; font-size: 13px; }
+.article ol { margin: 4px 0; padding-left: 20px; font-size: 13px; }
+.article .note { color: var(--muted); font-style: italic; }
+.article .meta { display: flex; gap: 6px; flex-wrap: wrap; }
+.article details summary { cursor: pointer; font-size: 13px; color: var(--brand); }

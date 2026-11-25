@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Virtual Branch</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10 12 4l9 6v1H3zM5 12h2v6H5zm4 0h2v6H9zm4 0h2v6h-2zm4 0h2v6h-2zM3 19h18v2H3z" fill="currentColor"/></svg>
+      <div>
+        <h1>Virtual Branch</h1>
+        <p id="cu-name">Member response assistant</p>
+      </div>
+    </div>
+    <span id="mode" class="pill">Loading…</span>
+  </header>
+
+  <main class="layout">
+    <section class="panel" aria-labelledby="inquiry-h">
+      <h2 id="inquiry-h">Member inquiry</h2>
+      <form id="inquiry-form">
+        <div class="segmented" role="radiogroup" aria-label="Channel">
+          <label><input type="radio" name="channel" value="chat" checked> Chat</label>
+          <label><input type="radio" name="channel" value="email"> Email</label>
+        </div>
+        <div class="row">
+          <label>Member first name
+            <input id="member-name" autocomplete="off" placeholder="e.g. Maria">
+          </label>
+          <label>Your name
+            <input id="rep-name" autocomplete="off" placeholder="e.g. Jordan">
+          </label>
+        </div>
+        <label>Message from the member
+          <textarea id="inquiry" rows="7" required placeholder="Paste the member's chat message or email here…"></textarea>
+        </label>
+        <div class="actions">
+          <button type="submit" id="suggest-btn" class="primary">Suggest responses</button>
+          <span class="hint">Ctrl + Enter</span>
+        </div>
+      </form>
+      <div id="alerts" aria-live="polite"></div>
+      <details class="samples">
+        <summary>Try a sample inquiry</summary>
+        <ul id="samples"></ul>
+      </details>
+    </section>
+
+    <section class="panel" aria-labelledby="responses-h">
+      <h2 id="responses-h">Pick a response</h2>
+      <p id="responses-empty" class="empty">Suggested replies will appear here.</p>
+      <div id="responses" role="radiogroup" aria-labelledby="responses-h"></div>
+      <div id="editor" hidden>
+        <label for="reply">Your reply <span class="hint">(edit before sending)</span></label>
+        <textarea id="reply" rows="10"></textarea>
+        <div class="actions">
+          <button id="copy-btn" class="primary" type="button">Copy reply</button>
+          <span id="copy-status" class="hint" aria-live="polite"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="kb-h">
+      <h2 id="kb-h">Knowledge base</h2>
+      <input id="kb-search" type="search" placeholder="Search articles…" aria-label="Search the knowledge base">
+      <p id="kb-label" class="hint">All articles</p>
+      <div id="articles"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

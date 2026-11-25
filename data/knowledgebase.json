@@ -1,0 +1,581 @@
+[
+  {
+    "id": "routing-number",
+    "title": "Routing number and account number for direct deposit or ACH",
+    "category": "Accounts",
+    "keywords": [
+      "routing",
+      "aba",
+      "account number",
+      "direct deposit",
+      "ach",
+      "transit",
+      "bank number",
+      "set up payroll",
+      "employer"
+    ],
+    "summary": "Our routing number is {{routingNumber}}. The member's full account number is shown in {{onlineBankingName}} and {{appName}} under Account Details.",
+    "steps": [
+      "Log in to {{onlineBankingName}} or {{appName}}.",
+      "Select the checking or savings account you want deposits to go to.",
+      "Choose “Account Details” to see the full account number (tap the eye icon to reveal it).",
+      "Give your employer the routing number {{routingNumber}} and that account number. You can also download a pre-filled direct deposit form from the same screen."
+    ],
+    "repNotes": "Never send a member's full account number over chat or email. Point them to Account Details or the pre-filled direct deposit form instead."
+  },
+  {
+    "id": "password-reset",
+    "title": "Reset a forgotten Online Banking password or username",
+    "category": "Digital Banking",
+    "keywords": [
+      "password",
+      "forgot",
+      "reset",
+      "locked out",
+      "username",
+      "login",
+      "log in",
+      "sign in",
+      "can't access",
+      "locked",
+      "two-factor",
+      "verification code"
+    ],
+    "summary": "Members can reset their password themselves with the “Forgot password?” link on the {{onlineBankingName}} or {{appName}} login screen. After five failed attempts the account locks for 30 minutes.",
+    "steps": [
+      "Go to the login screen on {{website}} or in {{appName}}.",
+      "Select “Forgot username or password?”.",
+      "Enter the requested identity details and the one-time code we text or email to the contact info on file.",
+      "Create a new password (at least 10 characters, with a number and a symbol)."
+    ],
+    "repNotes": "Never ask for or accept a member's password. If the phone or email on file is out of date, the member must verify identity by phone at {{phone}} or visit a branch.",
+    "sensitive": true
+  },
+  {
+    "id": "lost-stolen-card",
+    "title": "Lost or stolen debit or credit card",
+    "category": "Cards",
+    "keywords": [
+      "lost",
+      "stolen",
+      "missing card",
+      "card lost",
+      "wallet",
+      "lock card",
+      "freeze card",
+      "replace card",
+      "debit card",
+      "credit card",
+      "card stolen"
+    ],
+    "summary": "Members can lock their card instantly in {{appName}} under Card Controls. To cancel and replace it, call {{fraudPhone}} (available 24/7). A replacement arrives in {{policy.cardReplacementDays}}; rush delivery is available for {{policy.rushCardFee}}.",
+    "steps": [
+      "Lock the card right away: {{appName}} → Cards → Card Controls → Lock card.",
+      "Review recent transactions for anything unfamiliar.",
+      "Call our 24/7 card line at {{fraudPhone}} to cancel the card and order a replacement.",
+      "Update any automatic payments with the new card number once it arrives."
+    ],
+    "repNotes": "If the member reports unauthorized transactions, open a dispute (see Disputes) and flag for the fraud team.",
+    "escalate": true
+  },
+  {
+    "id": "dispute-transaction",
+    "title": "Dispute an unauthorized or incorrect transaction",
+    "category": "Cards",
+    "keywords": [
+      "dispute",
+      "unauthorized",
+      "charge",
+      "don't recognize",
+      "fraud",
+      "incorrect charge",
+      "chargeback",
+      "double charged",
+      "refund",
+      "merchant",
+      "didn't make",
+      "unknown transaction"
+    ],
+    "summary": "Members can dispute a transaction within {{policy.disputeWindow}}. Disputes can be started in {{onlineBankingName}} by selecting the transaction and choosing “Dispute this transaction,” or by calling {{phone}}.",
+    "steps": [
+      "Open the transaction in {{onlineBankingName}} or {{appName}}.",
+      "Select “Dispute this transaction” and tell us what happened.",
+      "If the card may be compromised, lock it in Card Controls and call {{fraudPhone}}.",
+      "We'll confirm receipt and keep you updated. Provisional credit may be issued while we investigate."
+    ],
+    "repNotes": "For a card that may be compromised, escalate to the fraud team and do not promise a provisional credit amount or timeline beyond what the dispute policy states.",
+    "escalate": true
+  },
+  {
+    "id": "mobile-deposit",
+    "title": "Mobile check deposit limits and availability",
+    "category": "Digital Banking",
+    "keywords": [
+      "mobile deposit",
+      "deposit check",
+      "remote deposit",
+      "photo",
+      "check",
+      "hold",
+      "limit",
+      "deposit limit",
+      "endorse",
+      "rejected deposit",
+      "funds available"
+    ],
+    "summary": "Members can deposit checks in {{appName}} up to {{policy.mobileDepositDailyLimit}} per day. {{policy.mobileDepositHoldNote}}.",
+    "steps": [
+      "Endorse the back of the check with your signature and “For Mobile Deposit Only at {{shortName}}.”",
+      "In {{appName}}, choose Deposit → Deposit a Check.",
+      "Photograph the front and back on a dark, flat surface in good light.",
+      "Keep the paper check for 30 days, then shred it."
+    ],
+    "repNotes": "Rejected deposits are most often caused by missing endorsement wording or blurry images."
+  },
+  {
+    "id": "overdraft-protection",
+    "title": "Overdraft protection and NSF fees",
+    "category": "Accounts",
+    "keywords": [
+      "overdraft",
+      "nsf",
+      "insufficient funds",
+      "overdrawn",
+      "negative balance",
+      "fee",
+      "bounced",
+      "returned item",
+      "courtesy pay",
+      "overdraft transfer"
+    ],
+    "summary": "Overdraft Transfer moves money from a linked savings account to cover a shortfall for a {{policy.overdraftTransferFee}} transfer fee. Items returned unpaid may incur a {{policy.nsfFee}} NSF fee.",
+    "steps": [
+      "Link a savings account to checking in {{onlineBankingName}} → Account Services → Overdraft Protection.",
+      "Turn on low-balance alerts under Alerts so you're notified before an overdraft happens."
+    ],
+    "repNotes": "Reps may not promise a fee refund over chat or email. Fee reversal requests go to a supervisor through the Fee Review queue."
+  },
+  {
+    "id": "fee-refund-request",
+    "title": "Member asks for a fee to be refunded",
+    "category": "Accounts",
+    "keywords": [
+      "refund fee",
+      "waive",
+      "reverse fee",
+      "fee reversal",
+      "charged a fee",
+      "unfair fee",
+      "courtesy refund",
+      "take off the fee"
+    ],
+    "summary": "Fee reversal requests are reviewed by a supervisor. The rep can submit the request and let the member know they'll hear back within two business days.",
+    "steps": [
+      "Confirm the fee type, date and amount with the member (no card or account numbers needed).",
+      "Submit the request in the Fee Review queue with a short note on the circumstances.",
+      "Let the member know a supervisor will review it and follow up within two business days."
+    ],
+    "repNotes": "Don't promise an outcome. Acknowledge the member's frustration and set a clear follow-up expectation.",
+    "escalate": true,
+    "memberSummary": "I've submitted a request for a supervisor to review the fee. You'll hear back from us within two business days.",
+    "memberSteps": []
+  },
+  {
+    "id": "wire-transfer",
+    "title": "Send a domestic wire transfer",
+    "category": "Payments",
+    "keywords": [
+      "wire",
+      "wire transfer",
+      "send money",
+      "outgoing wire",
+      "incoming wire",
+      "swift",
+      "closing",
+      "title company",
+      "real estate"
+    ],
+    "summary": "Domestic wires cost {{policy.wireDomesticFee}} and must be requested by {{policy.wireCutoff}} on a business day to go out the same day. For security, wires are initiated by phone at {{phone}} or in a branch, never by email.",
+    "steps": [
+      "Have the recipient's name, bank name, routing number and account number ready.",
+      "Call {{phone}} or visit a branch to request the wire. We'll verify your identity before sending.",
+      "Before sending a wire for a home closing, confirm the instructions by calling the title company at a number you already know is real."
+    ],
+    "repNotes": "Wire instructions received by email are a common fraud tactic. Never initiate a wire from an email or chat request.",
+    "sensitive": true
+  },
+  {
+    "id": "direct-deposit-timing",
+    "title": "When will my direct deposit post?",
+    "category": "Accounts",
+    "keywords": [
+      "direct deposit",
+      "paycheck",
+      "payday",
+      "early pay",
+      "when will",
+      "post",
+      "pending",
+      "deposit not showing",
+      "social security",
+      "benefits"
+    ],
+    "summary": "{{policy.achPostingNote}}. Deposits post as soon as we receive them from the sender.",
+    "steps": [
+      "Check the Pending section of the account in {{appName}}.",
+      "If the deposit hasn't arrived by the end of the scheduled payday, confirm with the employer or payer that it was sent to routing number {{routingNumber}} and the correct account."
+    ],
+    "repNotes": "We can't see a deposit until the sending institution transmits it."
+  },
+  {
+    "id": "branch-hours",
+    "title": "Branch and contact center hours",
+    "category": "General",
+    "keywords": [
+      "hours",
+      "open",
+      "close",
+      "branch",
+      "location",
+      "when are you open",
+      "saturday",
+      "holiday",
+      "contact",
+      "phone number",
+      "call"
+    ],
+    "summary": "Branches are open {{hours.branches}}. The contact center is available {{hours.contactCenter}} at {{phone}}. The 24/7 card line is {{fraudPhone}}.",
+    "steps": [
+      "Find the nearest branch and today's hours with the Locations tool on {{website}} or in {{appName}}."
+    ]
+  },
+  {
+    "id": "atm-network",
+    "title": "Surcharge-free ATMs and ATM limits",
+    "category": "Cards",
+    "keywords": [
+      "atm",
+      "cash",
+      "withdraw",
+      "surcharge",
+      "co-op",
+      "allpoint",
+      "atm fee",
+      "atm limit",
+      "find atm"
+    ],
+    "summary": "Members can use {{policy.surchargeFreeAtms}} surcharge-free ATMs in the {{policy.atmNetwork}} networks. The daily ATM withdrawal limit is {{policy.atmDailyLimit}}.",
+    "steps": [
+      "Use the ATM locator in {{appName}} (Locations → ATMs) to find surcharge-free ATMs nearby.",
+      "Call {{phone}} if you need a temporary limit increase."
+    ]
+  },
+  {
+    "id": "travel-notice",
+    "title": "Traveling with a debit or credit card",
+    "category": "Cards",
+    "keywords": [
+      "travel",
+      "travel notice",
+      "vacation",
+      "abroad",
+      "international",
+      "out of country",
+      "trip",
+      "foreign transaction",
+      "card declined while traveling",
+      "going to",
+      "overseas",
+      "out of town",
+      "tell you",
+      "let you know",
+      "notify",
+      "another country",
+      "next month"
+    ],
+    "summary": "Members can set a travel notice in {{appName}} under Cards → Travel Plans so their card keeps working while away.",
+    "steps": [
+      "Open {{appName}} → Cards → Travel Plans.",
+      "Add your destinations and travel dates.",
+      "Make sure your mobile number is current so we can text you if we see unusual activity.",
+      "Save {{fraudPhone}} in your phone in case you need help while you're away."
+    ]
+  },
+  {
+    "id": "card-declined",
+    "title": "Debit card declined",
+    "category": "Cards",
+    "keywords": [
+      "declined",
+      "card not working",
+      "denied",
+      "won't go through",
+      "rejected",
+      "card blocked",
+      "purchase limit",
+      "pos limit"
+    ],
+    "summary": "Common causes are a locked card, insufficient available balance, the {{policy.debitPosDailyLimit}} daily purchase limit, or a fraud-prevention hold. Members can check Card Controls in {{appName}}.",
+    "steps": [
+      "Check that the card isn't locked: {{appName}} → Cards → Card Controls.",
+      "Confirm the available balance (pending transactions reduce it).",
+      "If you received a fraud alert text, reply to confirm the purchase was yours.",
+      "If it still isn't working, call {{fraudPhone}} so we can look at the decline reason."
+    ]
+  },
+  {
+    "id": "membership-eligibility",
+    "title": "Who can join and how to open a membership",
+    "category": "Membership",
+    "keywords": [
+      "join",
+      "membership",
+      "eligible",
+      "eligibility",
+      "open account",
+      "become a member",
+      "new member",
+      "field of membership",
+      "family member"
+    ],
+    "summary": "Anyone who lives, works, worships or attends school in our service area, plus family members of current members, can join. Membership opens with a {{policy.membershipMinimum}}.",
+    "steps": [
+      "Apply online at {{website}}/join (about 10 minutes) or visit any branch.",
+      "Have a government-issued photo ID and your Social Security number ready. You'll enter these in the secure application, not by email or chat.",
+      "Fund your Membership Savings account to complete membership."
+    ]
+  },
+  {
+    "id": "auto-loan",
+    "title": "Auto loan applications and rates",
+    "category": "Loans",
+    "keywords": [
+      "auto loan",
+      "car loan",
+      "vehicle",
+      "refinance car",
+      "truck",
+      "loan rate",
+      "apr",
+      "pre-approval",
+      "preapproved",
+      "buy a car"
+    ],
+    "summary": "Members can apply for new, used or refinance auto loans at {{website}}/loans or in {{appName}}. Current rates are listed on the Rates page and depend on credit history and term. Most decisions are made within one business day.",
+    "steps": [
+      "Check current rates at {{website}}/rates.",
+      "Apply online or in {{appName}} → Apply → Auto Loan.",
+      "Pre-approval lets you shop with a set budget. It's typically valid for 60 days."
+    ],
+    "repNotes": "Do not quote a specific rate in writing. Always direct members to the Rates page, because rates change and depend on credit."
+  },
+  {
+    "id": "mortgage-heloc",
+    "title": "Mortgages and home equity lines of credit",
+    "category": "Loans",
+    "keywords": [
+      "mortgage",
+      "home loan",
+      "heloc",
+      "home equity",
+      "refinance",
+      "house",
+      "closing",
+      "escrow",
+      "first-time buyer"
+    ],
+    "summary": "Our mortgage team helps with purchases, refinances and home equity lines of credit. Members can apply at {{website}}/home or schedule a call with a mortgage loan officer.",
+    "steps": [
+      "Review current rates at {{website}}/rates.",
+      "Schedule a no-obligation call with a mortgage loan officer at {{website}}/home.",
+      "Have recent pay stubs, two years of W-2s, and bank statements ready for the application."
+    ],
+    "repNotes": "Refer detailed rate and qualification questions to a licensed mortgage loan officer."
+  },
+  {
+    "id": "change-address",
+    "title": "Update address, phone number or email",
+    "category": "Accounts",
+    "keywords": [
+      "address",
+      "change address",
+      "moved",
+      "new address",
+      "update phone",
+      "update email",
+      "contact information",
+      "name change"
+    ],
+    "summary": "Members can update their address, phone and email in {{onlineBankingName}} under Profile & Settings. Name changes require a branch visit with legal documentation.",
+    "steps": [
+      "Log in to {{onlineBankingName}} → Profile & Settings → Contact Information.",
+      "Update the details and confirm with the one-time code we send.",
+      "For a legal name change, bring a photo ID and the supporting document (such as a marriage certificate) to any branch."
+    ],
+    "repNotes": "Contact info changes requested only through email or chat can't be completed by a rep. The member must make them in Online Banking or verify identity by phone."
+  },
+  {
+    "id": "statements",
+    "title": "Access statements and tax forms",
+    "category": "Accounts",
+    "keywords": [
+      "statement",
+      "e-statement",
+      "estatement",
+      "1099",
+      "tax form",
+      "1098",
+      "bank statement",
+      "proof of funds",
+      "history"
+    ],
+    "summary": "Statements are issued {{policy.statementCycle}} and are available for 7 years in {{onlineBankingName}} under Documents. Tax forms (1099-INT, 1098) are posted by January 31.",
+    "steps": [
+      "Log in to {{onlineBankingName}} → Documents → Statements (or Tax Forms).",
+      "Select the month or year and download the PDF."
+    ]
+  },
+  {
+    "id": "p2p-payments",
+    "title": "Sending money to friends and family (person-to-person payments)",
+    "category": "Payments",
+    "keywords": [
+      "send money",
+      "pay a friend",
+      "p2p",
+      "person to person",
+      "zelle",
+      "venmo",
+      "transfer to someone",
+      "split bill"
+    ],
+    "summary": "Members can send money to people they know and trust from {{appName}} under Transfers → Pay a Person, using the recipient's phone number or email.",
+    "steps": [
+      "Open {{appName}} → Transfers → Pay a Person.",
+      "Enter the recipient's mobile number or email and the amount.",
+      "Double-check the recipient before sending. These payments usually can't be reversed."
+    ],
+    "repNotes": "If a member says they were pressured to send money by someone claiming to be from the credit union, a utility or a government agency, treat it as a possible scam and escalate."
+  },
+  {
+    "id": "scam-impersonation",
+    "title": "Suspicious call, text or email claiming to be the credit union",
+    "category": "Security",
+    "keywords": [
+      "scam",
+      "phishing",
+      "suspicious",
+      "text message",
+      "someone called",
+      "impersonat",
+      "verification code",
+      "gave my code",
+      "fake",
+      "spoof",
+      "security"
+    ],
+    "summary": "{{shortName}} will never call, text or email to ask for a password, PIN, full card number or one-time verification code. If a member shared any of these, they should call {{fraudPhone}} right away.",
+    "steps": [
+      "Don't reply to the message or call back the number it came from.",
+      "If you shared a code, password or card number, call {{fraudPhone}} immediately so we can secure your account.",
+      "Change your {{onlineBankingName}} password.",
+      "Forward suspicious emails to our security team and then delete them."
+    ],
+    "repNotes": "Treat any shared credentials as urgent. Escalate to the fraud team immediately.",
+    "escalate": true,
+    "sensitive": true
+  },
+  {
+    "id": "close-account",
+    "title": "Close an account or membership",
+    "category": "Membership",
+    "keywords": [
+      "close account",
+      "cancel",
+      "closing",
+      "leave",
+      "end membership",
+      "move my money"
+    ],
+    "summary": "Accounts can be closed in a branch or by signed written request. Before closing, members should move automatic payments and direct deposits and wait for outstanding checks to clear.",
+    "steps": [
+      "Move direct deposits and automatic payments to the new account.",
+      "Make sure all outstanding checks and pending transactions have cleared.",
+      "Visit a branch or call {{phone}} to complete the closure. We'll send the remaining balance by check or transfer."
+    ],
+    "repNotes": "Ask (politely, once) if there's anything we could do better and log retention feedback."
+  },
+  {
+    "id": "deceased-member",
+    "title": "Reporting the death of a member",
+    "category": "Membership",
+    "keywords": [
+      "passed away",
+      "died",
+      "death",
+      "deceased",
+      "estate",
+      "executor",
+      "beneficiary",
+      "funeral",
+      "survivor"
+    ],
+    "summary": "We're sorry for the loss. Our Estate Services team will guide the family through next steps. They'll need a certified death certificate and, if applicable, letters of administration or testamentary.",
+    "steps": [
+      "Call {{phone}} and ask for Estate Services, or visit any branch.",
+      "Bring a certified copy of the death certificate and your photo ID.",
+      "If you are the executor, bring the court-issued letters testamentary or letters of administration."
+    ],
+    "repNotes": "Lead with condolences. Do not discuss account details until the requester's authority is verified. Escalate to Estate Services.",
+    "escalate": true
+  },
+  {
+    "id": "beneficiary-pod",
+    "title": "Add a beneficiary (payable on death) or joint owner",
+    "category": "Accounts",
+    "keywords": [
+      "beneficiary",
+      "payable on death",
+      "pod",
+      "joint owner",
+      "add someone",
+      "add my spouse",
+      "authorized user",
+      "joint account"
+    ],
+    "summary": "Members can add a payable-on-death beneficiary in {{onlineBankingName}} under Account Services. Adding a joint owner requires both people to sign in a branch.",
+    "steps": [
+      "For a beneficiary: {{onlineBankingName}} → Account Services → Beneficiaries, then enter their name, relationship and date of birth.",
+      "For a joint owner: schedule a branch visit. Both people should bring photo ID."
+    ]
+  },
+  {
+    "id": "complaint",
+    "title": "Member wants to file a complaint",
+    "category": "General",
+    "keywords": [
+      "complaint",
+      "unhappy",
+      "terrible",
+      "worst",
+      "speak to manager",
+      "supervisor",
+      "disappointed",
+      "poor service",
+      "angry",
+      "frustrated",
+      "unacceptable"
+    ],
+    "summary": "We take every complaint seriously. The rep should acknowledge the concern, apologize for the experience, capture the details, and route the complaint to a supervisor, who follows up within two business days.",
+    "steps": [
+      "Thank the member for telling us and apologize for the experience.",
+      "Capture what happened, when, and what outcome the member is hoping for.",
+      "Log the complaint in the Complaint Tracker and route it to a supervisor.",
+      "Tell the member who will follow up and when."
+    ],
+    "repNotes": "Complaints are a regulatory record. Always log them, even when resolved on the spot.",
+    "escalate": true,
+    "memberSummary": "Thank you for telling us about this. I'm sorry for the experience. I've documented what happened and shared it with a supervisor, who will follow up with you within two business days.",
+    "memberSteps": []
+  }
+]

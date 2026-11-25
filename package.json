@@ -1,0 +1,28 @@
+{
+  "name": "virtual-branch",
+  "version": "1.0.0",
+  "description": "Knowledge-base-backed response assistant for credit union contact center reps answering member chats and emails.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justingburns/ai-knowledge-assist.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justingburns/ai-knowledge-assist/issues"
+  },
+  "homepage": "https://github.com/justingburns/ai-knowledge-assist#readme",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.14.0",
+    "zod": "^4.6.7"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  }
+}
